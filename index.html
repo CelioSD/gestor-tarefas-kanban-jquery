@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESENVOLVIMENTO DE UMA APLICAÇÃO EM
+JQUERY</title>
+</head>
+ <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- jQuery UI -->
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+<body>
+    <div class="container">
+        
+
+        <form >
+            <label >Título</label>
+            <input type="text" placeholder="Título" id="titulo">
+            <p id="avisoTitulo" style="display:none">Este campo precisa ser preenchido</p>
+            <label >Descrição</label>
+            <textarea name="" id="descricao"></textarea>
+            <p id="avisoDescricao" style="display:none">Este campo precisa ser preenchido</p>
+            <label >Prioridade</label>
+            <select name="prioridade" id="prioridade">
+                <option value="Baixa">Baixa</option>
+                <option value="Média">Média</option>
+                <option value="Alta">Alta</option>
+            </select>
+            <label >Estado</label>
+            <select name="estado" id="estado">
+                <option value="Por Fazer">Por Fazer</option>
+                <option value="Em progresso">Em progresso</option>
+                <option value="Concluída">Concluída</option>
+            </select>
+    
+            <button type="submit">Adicionar tarefa</button>
+        </form>
+
+        <input type="text" id="pesquisa" placeholder="pesquisar tarefa">
+
+        <div id="tarefas">
+            <div class="coluna">
+                <h2>Por fazer</h2>
+                <div id="por-fazer" ></div>
+            </div>
+            <div class="coluna">
+                <h2>Em Progresso</h2>
+                <div id="em-progresso" ></div>
+            </div>
+            <div class="coluna">
+                <h2>Concluídas</h2>
+                <div id="concluidas" ></div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
